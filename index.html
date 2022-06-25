@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-logo">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="nav-item">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Testimonial</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="home-section section">
+        <h2>Welcome To</h2>
+        <h1>CS Diagnostic India</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, atque? consectetur adipisicing elit. Cum, atque?</p>
+        <a href="#product-section" class="btn-a">Explore Now</a>
+    </section>
+
+
+
+    <section class="product-section" id="product-section">
+        <div class="product-heading">
+            <h2>Our Products</h2>
+            <hr>
+        </div>
+        <div class="product-card">
+            <div class="card" id="card1"></div>
+            <div class="card" id="card2"></div>
+            <div class="card" id="card3"></div>
+            <div class="card" id="card4"></div>
+            <div class="card" id="card5"></div>
+        </div>
+            <div class="card-circle">
+                <div class="circle" id="circle3"></div>
+                <div class="circle" id="circle2"></div>
+                <div class="circle" id="circle1"></div>
+                <div class="circle" id="circle4"></div>
+                <div class="circle" id="circle5"></div>
+            </div>
+            <div class="view-more-btn">
+                <a class="btn-a" id="viewmorebtn" onclick="viewmore()">View More</a>
+            </div>
+            <div class="product-item" id="productitem">
+                <div class="pitem" id="pitem1">
+                    <div class="overlay">
+                        <h2>Heading</h2>
+                    </div>
+                </div>
+                <div class="pitem" id="pitem2">
+                    <div class="overlay">
+                        <h2>Heading</h2>
+                    </div>
+                </div>
+                <div class="pitem" id="pitem3">
+                    <div class="overlay">
+                        <h2>Heading</h2>
+                    </div>
+                </div>
+                <div class="pitem" id="pitem4">
+                    <div class="overlay">
+                        <h2>Heading</h2>
+                    </div>
+                </div>
+
+                <div class="pitem" id="pitem5">
+                    <div class="overlay">
+                        <h2>Heading</h2>
+                    </div>
+                </div>
+                <div class="pitem" id="pitem6">
+                    <div class="overlay">
+                        <h2>Heading</h2>
+                    </div>
+                </div>
+                <div class="pitem" id="pitem7">
+                    <div class="overlay">
+                        <h2>Heading</h2>
+                    </div>
+                </div>
+                <div class="pitem" id="pitem8">
+                    <div class="overlay">
+                        <h2>Heading</h2>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+
+
+
+
+
+
+
+
+    <!-- <section class="extra-1 extra">
+        <div class="element" id="element1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quidem!</p>
+        </div>
+        <div class="element" id="element2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quidem!</p>
+        </div>
+        <div class="element" id="element3">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quidem!</p>
+        </div>
+    </section> -->
+
+
+
+
+
+
+
+    <script>
+        var productitem = document.getElementById("productitem")
+        var viewmorebtn = document.getElementById("viewmorebtn")
+
+        function viewmore(){
+            if (productitem.style.display != "grid"){
+                productitem.style.display = "grid";
+                viewmorebtn.innerHTML = "View Less";
+            }
+            else{
+                productitem.style.display = "none";
+                viewmorebtn.innerHTML = "View More";
+            }
+        }
+    </script>
+</body>
+</html>
