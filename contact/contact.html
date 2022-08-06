@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Diagnostic | Contact</title>
+    <link rel="icon" href="images/cs logo.png">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="social-media" onclick="smedia()">
+        <div class="media" id="media1"></div>
+        <div class="media" id="media2"></div>
+        <div class="media" id="media3"></div>
+        <div class="media" id="media4"></div>
+        <div class="overlaymedia" id="overlaymedia"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="navbar-logo">
+          <img src="images/cs logo.png" alt="" />
+        </div>
+        <div class="navbar-items">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../product/product.html">Product</a></li>
+            <li><a href="../gallery/gallery.css">Gallery</a></li>
+            <li><a href="../about/about.html">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="main">
+        <img src="images/under construction.png" alt="">
+      </div>
+
+
+      <script>
+        var media1 = document.getElementById("media1");
+        var media2 = document.getElementById("media2");
+        var media3 = document.getElementById("media3");
+        var media4 = document.getElementById("media4");
+        var overlaymedia = document.getElementById("overlaymedia");
+        function smedia(){
+            if (media1.style.transform != "translateY(-17rem)"){
+                overlaymedia.style.transform = "rotate(180deg)";
+                overlaymedia.style.transition = "0.3s linear"
+
+                media1.style.transform = "translateY(-17rem)";
+                media1.style.transition = "0.3s linear"
+                media2.style.transform = "translateY(-13rem)";
+                media2.style.transition = "0.3s linear"
+                media3.style.transform = "translateY(-9rem)";
+                media3.style.transition = "0.3s linear"
+                media4.style.transform = "translateY(-5rem)";
+                media4.style.transition = "0.3s linear"
+            }
+            else{
+                overlaymedia.style.transform = "rotate(-180deg)";
+                overlaymedia.style.transition = "0.3s linear"
+
+                media1.style.transform = "translateY(0rem)";
+                media1.style.transition = "0.3s linear"
+                media2.style.transform = "translateY(0rem)";
+                media2.style.transition = "0.3s linear"
+                media3.style.transform = "translateY(0rem)";
+                media3.style.transition = "0.3s linear"
+                media4.style.transform = "translateY(0rem)";
+                media4.style.transition = "0.3s linear"
+            }
+        }
+      </script>
+</body>
+</html>

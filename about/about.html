@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cs Diagnostic | About Us</title>
+    <link rel="icon" href="images/cs logo.png">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <div class="social-media" onclick="smedia()">
+        <div class="media" id="media1"></div>
+        <div class="media" id="media2"></div>
+        <div class="media" id="media3"></div>
+        <div class="media" id="media4"></div>
+        <div class="overlaymedia" id="overlaymedia"></div>
+    </div>
+
+    <nav id="navbar">
+        <div class="navbar-logo">
+          <img src="images/cs logo.png" alt="" />
+        </div>
+        <div class="navbar-items">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../product/product.html">Product</a></li>
+            <li><a href="../gallery/gallery.html">Gallery</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="../contact/contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <section class="main">
+        <div class="heading">
+            <h1>Get To Know Us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam adipisci sint dolorem.</p>
+        </div>
+        <div class="content">
+            <div class="left-box box">
+                <img src="images/kit.jpg" alt="">
+                <h2>Who We Are?</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore deserunt mollitia architecto obcaecati corrupti consequuntur? Officiis magnam exercitationem recusandae aliquam perspiciatis fugit reiciendis, similique culpa!</p>
+            </div>
+            <div class="right-box box">
+                <h2>What We Do?</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore deserunt mollitia architecto obcaecati corrupti consequuntur? Officiis magnam exercitationem recusandae aliquam perspiciatis fugit reiciendis, similique culpa!</p>
+                <img src="images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+      
+
+
+    <footer id="footer">
+        <div class="footer-upper-section">
+            <div class="footer-upper-section-column" id="footer-column1">
+                <img src="images/cs logo.png" alt="">
+                <p>We are India's Most Loved Coding Community. Join us! </p>
+            </div>
+            <div class="footer-upper-section-column" id="footer-column2">
+                <h3>Links</h3>
+                <div class="helpful-links-points">
+                    <div class="topics-covered-points">
+                        <p><a href="#home" class="CTW">Home</a></p>
+                    </div>
+                    <div class="topics-covered-points">
+                        <p><a href="#practice" class="CTW">Product</a></p>
+                    </div>
+                    <div class="topics-covered-points">
+                        <p><a href="#about" class="CTW">Gallery</a></p>
+                    </div>
+                    <div class="topics-covered-points">
+                        <p><a href="#footer" class="CTW">About us</a></p>
+                    </div>
+                    <div class="topics-covered-points">
+                        <p><a href="#footer" class="CTW">Contact us</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-upper-section-column" id="footer-column3">
+                <h3>Get In Touch</h3>
+                <div class="topics-covered-points">
+                    <p>hello@apnacollege.in</p>
+                </div>
+            </div>
+            <div class="footer-upper-section-column" id="footer-column4">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#">FACEBOOK</a></li>
+                    <li><a href="#">TWITTER</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="#">INSTAGRAM</a></li>
+                    <li><a href="#">LINKEDIN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-lower-section">
+            <p>Developed By <span>Sachin Jha</span></p>
+        </div>
+    </footer>
+
+
+    
+      <script>
+        var media1 = document.getElementById("media1");
+        var media2 = document.getElementById("media2");
+        var media3 = document.getElementById("media3");
+        var media4 = document.getElementById("media4");
+        var overlaymedia = document.getElementById("overlaymedia");
+        function smedia(){
+            if (media1.style.transform != "translateY(-17rem)"){
+                overlaymedia.style.transform = "rotate(180deg)";
+                overlaymedia.style.transition = "0.3s linear"
+
+                media1.style.transform = "translateY(-17rem)";
+                media1.style.transition = "0.3s linear"
+                media2.style.transform = "translateY(-13rem)";
+                media2.style.transition = "0.3s linear"
+                media3.style.transform = "translateY(-9rem)";
+                media3.style.transition = "0.3s linear"
+                media4.style.transform = "translateY(-5rem)";
+                media4.style.transition = "0.3s linear"
+            }
+            else{
+                overlaymedia.style.transform = "rotate(-180deg)";
+                overlaymedia.style.transition = "0.3s linear"
+
+                media1.style.transform = "translateY(0rem)";
+                media1.style.transition = "0.3s linear"
+                media2.style.transform = "translateY(0rem)";
+                media2.style.transition = "0.3s linear"
+                media3.style.transform = "translateY(0rem)";
+                media3.style.transition = "0.3s linear"
+                media4.style.transform = "translateY(0rem)";
+                media4.style.transition = "0.3s linear"
+            }
+        }
+      </script>
+</body>
+</html>

@@ -1,126 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS Diagnostics | Home</title>
+    <link rel="icon" href="images/cs logo.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+
+    <div class="social-media" onclick="smedia()">
+        <div class="media" id="media1"></div>
+        <div class="media" id="media2"></div>
+        <div class="media" id="media3"></div>
+        <div class="media" id="media4"></div>
+        <div class="overlaymedia" id="overlaymedia"></div>
+    </div>
+
     <nav id="navbar">
-        <div class="nav-logo">
-            <img src="logo.png" alt="">
-        </div>
-        <div class="nav-item">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Product</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Testimonial</a></li>
-            </ul>
-        </div>
+      <div class="navbar-logo">
+        <img src="images/cs logo.png" alt="" />
+      </div>
+      <div class="navbar-items">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="product/product.html">Product</a></li>
+          <li><a href="gallery/gallery.html">Gallery</a></li>
+          <li><a href="about/about.html">About Us</a></li>
+          <li><a href="contact/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <section class="home-section section">
-        <h2>Welcome To</h2>
-        <h1>CS Diagnostic India</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, atque? consectetur adipisicing elit. Cum, atque?</p>
-        <a href="#product-section" class="btn-a">Explore Now</a>
-    </section>
+    <div class="landing-section">
+      <div class="landing-section-text">
+        <h3>Welcome To</h3>
+        <h1><span>CS </span><span>Diagnostics India</span></h1>
+        <h3>Quality & Patients Come First</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim tempore
+          ad sequi ut distinctio.
+        </p>
+        <a href="#" class="btn-a">Know Us</a>
+      </div>
+      <div class="landing-section-image">
+        <img src="images/landing bg.png" alt="">
+      </div>
+    </div>
 
+    <div class="quality-section">
+      <div class="quality-section-box">
+        <div class="quality-section-child" id="quality-section-child1">
+          <img src="images/quality.png" alt="" />
+          <p>Quality Check</p>
+        </div>
+        <div class="quality-section-child" id="quality-section-child2">
+          <img src="images/care.png" alt="" />
+          <p>Complete Care</p>
+        </div>
+        <div class="quality-section-child" id="quality-section-child3">
+          <img src="images/clean.png" alt="" />
+          <p>Cleanliness</p>
+        </div>
+        <div class="quality-section-child" id="quality-section-child4">
+          <img src="images/bacteria.png" alt="" />
+          <p>Bacteria Free</p>
+        </div>
+      </div>
+    </div>
 
-
-    <section class="product-section" id="product-section">
-        <div class="product-heading">
+    <div class="product-section">
+        <div class="product-section-top">
             <h2>Our Products</h2>
-            <hr>
         </div>
-        <div class="product-card">
-            <div class="card" id="card1"></div>
-            <div class="card" id="card2"></div>
-            <div class="card" id="card3"></div>
-            <div class="card" id="card4"></div>
-            <div class="card" id="card5"></div>
-        </div>
-            <div class="card-circle">
-                <div class="circle" id="circle3"></div>
-                <div class="circle" id="circle2"></div>
-                <div class="circle" id="circle1"></div>
-                <div class="circle" id="circle4"></div>
-                <div class="circle" id="circle5"></div>
+        <div class="product-section-bottom">
+            <div class="product-section-bottom-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, possimus tempora odit commodi laudantium quasi omnis aspernatur cum soluta culpa facilis blanditiis harum incidunt nisi odio ut corrupti sunt accusamus quia suscipit iste, repudiandae eius sapiente animi. Magnam, impedit aliquam.</p>
+                <a href="#" class="btn-a">View All</a>
             </div>
-            <div class="view-more-btn">
-                <a class="btn-a" id="viewmorebtn" onclick="viewmore()">View More</a>
-            </div>
-            <div class="product-item" id="productitem">
-                <div class="pitem" id="pitem1">
-                    <div class="overlay">
-                        <h2>Heading</h2>
+            <div class="product-section-bottom-card">
+                <div class="container">
+                    <div class="cards">
+                        <div class="card" id="card1" onclick="card1hover()"></div>
+                        <div class="card" id="card2" onclick="card2hover()"></div>
+                        <div class="card" id="card3" onclick="card3hover()"></div>
                     </div>
-                </div>
-                <div class="pitem" id="pitem2">
-                    <div class="overlay">
-                        <h2>Heading</h2>
-                    </div>
-                </div>
-                <div class="pitem" id="pitem3">
-                    <div class="overlay">
-                        <h2>Heading</h2>
-                    </div>
-                </div>
-                <div class="pitem" id="pitem4">
-                    <div class="overlay">
-                        <h2>Heading</h2>
-                    </div>
-                </div>
-
-                <div class="pitem" id="pitem5">
-                    <div class="overlay">
-                        <h2>Heading</h2>
-                    </div>
-                </div>
-                <div class="pitem" id="pitem6">
-                    <div class="overlay">
-                        <h2>Heading</h2>
-                    </div>
-                </div>
-                <div class="pitem" id="pitem7">
-                    <div class="overlay">
-                        <h2>Heading</h2>
-                    </div>
-                </div>
-                <div class="pitem" id="pitem8">
-                    <div class="overlay">
-                        <h2>Heading</h2>
-                    </div>
+                    <div class="cards-XSD">
+                      <div class="cardXSD" id="card1XSD" onmouseenter="card1XSDhover()"></div>
+                      <div class="cardXSD" id="card2XSD" onmouseenter="card2XSDhover()"></div>
+                      <div class="cardXSD" id="card3XSD" onmouseenter="card3XSDhover()"></div>
+                  </div>
+                  <div class="cards-SD">
+                      <div class="cardSD" id="card1SD" onmouseenter="card1SDhover()"></div>
+                      <div class="cardSD" id="card2SD" onmouseenter="card2SDhover()"></div>
+                      <div class="cardSD" id="card3SD" onmouseenter="card3SDhover()"></div>
+                  </div>
                 </div>
             </div>
-        
-    </section>
-
-
-
-
-
-
-
-
-    <!-- <section class="extra-1 extra">
-        <div class="element" id="element1">
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quidem!</p>
         </div>
-        <div class="element" id="element2">
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quidem!</p>
+    </div>
+
+
+    <div class="about-section">
+        <div class="about-section-top">
+            <h2>About Us</h2>
         </div>
-        <div class="element" id="element3">
-            <h3>Heading</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quidem!</p>
+        <div class="about-section-bottom">
+            <div class="about-section-bottom-image"></div>
+            <div class="about-section-bottom-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, possimus tempora odit commodi laudantium quasi omnis aspernatur cum soluta culpa facilis blanditiis harum incidunt nisi odio ut corrupti sunt accusamus quia suscipit iste, repudiandae eius sapiente animi. Magnam, impedit aliquam.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorum minima impedit quidem, repudiandae laudantium.</p>
+                <a href="#" class="btn-a">Know More</a>
+            </div>
         </div>
-    </section> -->
+    </div>
+
+
+    <div class="social-section">
+        <div class="social-section-box">
+          <div class="social-section-child" id="social-section-child1">
+            <img src="images/instagram.png" alt="" />
+            <p>Instagram</p>
+          </div>
+          <div class="social-section-child" id="social-section-child2">
+            <img src="images/whatsapp.png" alt="" />
+            <p>Whatsapp</p>
+          </div>
+          <div class="social-section-child" id="social-section-child3">
+            <img src="images/youtube.png" alt="" />
+            <p>You Tube</p>
+          </div>
+          <div class="social-section-child" id="social-section-child4">
+            <img src="images/twitter.png" alt="" /> 
+            <p>Twitter</p>
+          </div>
+        </div>
+      </div>
+
+
+      <footer id="footer">
+        <div class="footer-upper-section">
+            <div class="footer-upper-section-column" id="footer-column1">
+                <img src="images/cs logo.png" alt="">
+                <p>We are India's Most Loved Coding Community. Join us! </p>
+            </div>
+            <div class="footer-upper-section-column" id="footer-column2">
+                <h3>Links</h3>
+                <div class="helpful-links-points">
+                    <div class="topics-covered-points">
+                        <p><a href="#home" class="CTW">Home</a></p>
+                    </div>
+                    <div class="topics-covered-points">
+                        <p><a href="#practice" class="CTW">Product</a></p>
+                    </div>
+                    <div class="topics-covered-points">
+                        <p><a href="#about" class="CTW">Gallery</a></p>
+                    </div>
+                    <div class="topics-covered-points">
+                        <p><a href="#footer" class="CTW">About us</a></p>
+                    </div>
+                    <div class="topics-covered-points">
+                        <p><a href="#footer" class="CTW">Contact us</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-upper-section-column" id="footer-column3">
+                <h3>Get In Touch</h3>
+                <div class="topics-covered-points">
+                    <p>hello@apnacollege.in</p>
+                </div>
+            </div>
+            <div class="footer-upper-section-column" id="footer-column4">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#">FACEBOOK</a></li>
+                    <li><a href="#">TWITTER</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="#">INSTAGRAM</a></li>
+                    <li><a href="#">LINKEDIN</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-lower-section">
+            <p>Developed By <span>Sachin Jha</span></p>
+        </div>
+    </footer>
 
 
 
@@ -129,19 +195,199 @@
 
 
     <script>
-        var productitem = document.getElementById("productitem")
-        var viewmorebtn = document.getElementById("viewmorebtn")
+        var media1 = document.getElementById("media1");
+        var media2 = document.getElementById("media2");
+        var media3 = document.getElementById("media3");
+        var media4 = document.getElementById("media4");
+        var overlaymedia = document.getElementById("overlaymedia");
+        function smedia(){
+            if (media1.style.transform != "translateY(-16rem)"){
+                overlaymedia.style.transform = "rotate(180deg)";
+                overlaymedia.style.transition = "0.3s linear"
 
-        function viewmore(){
-            if (productitem.style.display != "grid"){
-                productitem.style.display = "grid";
-                viewmorebtn.innerHTML = "View Less";
+                media1.style.transform = "translateY(-16rem)";
+                media1.style.transition = "0.3s linear"
+                media2.style.transform = "translateY(-12rem)";
+                media2.style.transition = "0.3s linear"
+                media3.style.transform = "translateY(-8rem)";
+                media3.style.transition = "0.3s linear"
+                media4.style.transform = "translateY(-4rem)";
+                media4.style.transition = "0.3s linear"
             }
             else{
-                productitem.style.display = "none";
-                viewmorebtn.innerHTML = "View More";
+                overlaymedia.style.transform = "rotate(-180deg)";
+                overlaymedia.style.transition = "0.3s linear"
+
+                media1.style.transform = "translateY(0rem)";
+                media1.style.transition = "0.3s linear"
+                media2.style.transform = "translateY(0rem)";
+                media2.style.transition = "0.3s linear"
+                media3.style.transform = "translateY(0rem)";
+                media3.style.transition = "0.3s linear"
+                media4.style.transform = "translateY(0rem)";
+                media4.style.transition = "0.3s linear"
             }
         }
-    </script>
-</body>
+
+        var card1 = document.getElementById("card1");
+        var card2 = document.getElementById("card2");
+        var card3 = document.getElementById("card3");
+
+
+        
+        function card1hover(){
+            card1.style.transform = "translateX(200px) scale(1)";
+            card1.style.zIndex = "5";
+            card2.style.transform = "translateX(-120px) scale(0.9)";
+            card2.style.zIndex = "2";
+            card3.style.transform = "translateX(-80px) scale(0.9)"
+            card3.style.zIndex = "2";
+
+            card1.style.opacity = "1";
+            card2.style.opacity = "0.5";
+            card3.style.opacity = "0.5";
+        }
+        function card2hover(){
+            
+            card1.style.transform = "translateX(80px) scale(0.9)";
+            card1.style.zIndex = "2";
+            card2.style.transform = "translateX(0px) scale(1)";
+            card2.style.zIndex = "5";
+            card3.style.transform = "translateX(-80px) scale(0.9)"
+            card3.style.zIndex = "2";
+
+            card1.style.opacity = "0.5";
+            card2.style.opacity = "1";
+            card3.style.opacity = "0.5";
+        }
+        function card3hover(){
+            card1.style.transform = "translateX(80px) scale(0.9)";
+            card1.style.zIndex = "2";
+            card2.style.transform = "translateX(120px) scale(0.9)";
+            card2.style.zIndex = "2";
+            card3.style.transform = "translateX(-200px) scale(1)"
+            card3.style.zIndex = "5";
+
+            card1.style.opacity = "0.5";
+            card2.style.opacity = "0.5";
+            card3.style.opacity = "1";
+        }
+
+
+        
+        function card1SDhover(){
+
+            card1SD.style.transform = "translateX(170px) scale(1)";
+            card1SD.style.zIndex = "5";
+            card2SD.style.transform = "translateX(-100px) scale(0.9)";
+            card2SD.style.zIndex = "2";
+            card3SD.style.transform = "translateX(-80px) scale(0.9)"
+            card3SD.style.zIndex = "2";
+
+            card1SD.style.opacity = "1";
+            card2SD.style.opacity = "0.5";
+            card3SD.style.opacity = "0.5";
+        }
+        function card2SDhover(){
+
+            card1SD.style.transform = "translateX(80px) scale(0.9)";
+            card1SD.style.zIndex = "2";
+            card2SD.style.transform = "translateX(0px) scale(1)";
+            card2SD.style.zIndex = "5";
+            card3SD.style.transform = "translateX(-80px) scale(0.9)"
+            card3SD.style.zIndex = "2";
+
+            card1SD.style.opacity = "0.5";
+            card2SD.style.opacity = "1";
+            card3SD.style.opacity = "0.5";
+        }
+        function card3SDhover(){
+            card1SD.style.transform = "translateX(80px) scale(0.9)";
+            card1SD.style.zIndex = "2";
+            card2SD.style.transform = "translateX(100px) scale(0.9)";
+            card2SD.style.zIndex = "2";
+            card3SD.style.transform = "translateX(-170px) scale(1)"
+            card3SD.style.zIndex = "5";
+
+            card1SD.style.opacity = "0.5";
+            card2SD.style.opacity = "0.5";
+            card3SD.style.opacity = "1";
+        }
+
+
+        function card1XSDhover(){
+            card1XSD.style.transform = "translateX(100px) scale(1)";
+            card1XSD.style.zIndex = "5";
+            card2XSD.style.transform = "translateX(-70px) scale(0.8)";
+            card2XSD.style.zIndex = "2";
+            card3XSD.style.transform = "translateX(-50px) scale(0.8)"
+            card3XSD.style.zIndex = "2";
+
+            card1XSD.style.opacity = "1";
+            card2XSD.style.opacity = "0.5";
+            card3XSD.style.opacity = "0.5";
+        }
+        function card2XSDhover(){
+           
+            card1XSD.style.transform = "translateX(50px) scale(0.8)";
+            card1XSD.style.zIndex = "2";
+            card2XSD.style.transform = "translateX(0px) scale(1)";
+            card2XSD.style.zIndex = "5";
+            card3XSD.style.transform = "translateX(-50px) scale(0.8)"
+            card3XSD.style.zIndex = "2";
+
+            card1XSD.style.opacity = "0.5";
+            card2XSD.style.opacity = "1";
+            card3XSD.style.opacity = "0.5";
+        }
+        function card3XSDhover(){
+
+            card1XSD.style.transform = "translateX(60px) scale(0.8)";
+            card1XSD.style.zIndex = "2";
+            card2XSD.style.transform = "translateX(60px) scale(0.8)";
+            card2XSD.style.zIndex = "2";
+            card3XSD.style.transform = "translateX(-100px) scale(1)"
+            card3XSD.style.zIndex = "5";
+
+            card1XSD.style.opacity = "0.5";
+            card2XSD.style.opacity = "0.5";
+            card3XSD.style.opacity = "1";
+        }
+
+
+
+
+        if(window.matchMedia(("max-width:650px"))){
+          function smedia(){
+            if (media1.style.transform != "translateY(-21rem)"){
+                overlaymedia.style.transform = "rotate(180deg)";
+                overlaymedia.style.transition = "0.3s linear"
+
+                media1.style.transform = "translateY(-21rem)";
+                media1.style.transition = "0.3s linear"
+                media2.style.transform = "translateY(-16rem)";
+                media2.style.transition = "0.3s linear"
+                media3.style.transform = "translateY(-12rem)";
+                media3.style.transition = "0.3s linear"
+                media4.style.transform = "translateY(-7rem)";
+                media4.style.transition = "0.3s linear"
+            }
+            else{
+                overlaymedia.style.transform = "rotate(-180deg)";
+                overlaymedia.style.transition = "0.3s linear"
+
+                media1.style.transform = "translateY(0rem)";
+                media1.style.transition = "0.3s linear"
+                media2.style.transform = "translateY(0rem)";
+                media2.style.transition = "0.3s linear"
+                media3.style.transform = "translateY(0rem)";
+                media3.style.transition = "0.3s linear"
+                media4.style.transform = "translateY(0rem)";
+                media4.style.transition = "0.3s linear"
+            }
+        }
+        }
+
+  </script>
+  </body>
 </html>
